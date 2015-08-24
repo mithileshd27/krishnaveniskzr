@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website of the schools present in Sirpur Kaghaznagar by the name of Krishnaveni High School.">
+    <script LANGUAGE="JavaScript">
+      var scrl = "Welcome to Krishnaveni High School, Sirpur Kaghaznagar";
+      function scrlsts() {
+        scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+        document.title = scrl;
+        setTimeout("scrlsts()", 300);
+      }
+    </script>
+  </head>
+  <body onLoad="scrlsts()">
+    
+  </body>
+</html>
