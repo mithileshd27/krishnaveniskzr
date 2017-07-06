@@ -4,15 +4,68 @@
     <meta charset="utf-8">
     <meta name="description" content="This is a website of the schools present in Sirpur Kaghaznagar by the name of Krishnaveni High School.">
     <script LANGUAGE="JavaScript">
-      var scrl = "Welcome to Krishnaveni High School, Sirpur Kaghaznagar";
+      var scrl = "| Welcome to Krishnaveni High School, Sirpur Kaghaznagar |";
       function scrlsts() {
         scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
         document.title = scrl;
         setTimeout("scrlsts()", 300);
       }
     </script>
+    <style>
+    /* Menu styling */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #00a9ff;
+      border-radius : 8px;
+    }
+
+    li.menu {
+      float: left;
+    }
+
+    li.menu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+    }
+
+    li.menu a:hover {
+      background-color: #87d6ff;
+    }
+    /* End of Menu Styling */
+
+	#grad {
+  padding : 40px 0;
+  background: #2f437e; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #2f437e, #4293ae, #2f437e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #2f437e, #4293ae, #2f437e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #2f437e, #4293ae, #2f437e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #2f437e, #4293ae, #2f437e); /* Standard syntax */
+}
+	div.main {
+  background-color: #d2ddef;
+	margin : auto;
+	width : 70%;
+	height : 80vh;
+	border : 2px solid white;
+	border-radius : 8px;
+}
+   </style>
   </head>
-  <body onLoad="scrlsts()">
-    
+  <body id="grad" onLoad="scrlsts()">
+    <div class="main">
+      <ul class="menu">
+  <li class="menu"><a href="#home">Home</a></li>
+  <li class="menu"><a href="#news">News</a></li>
+  <li class="menu"><a href="#contact">Contact</a></li>
+  <li class="menu"><a href="#about">About</a></li>
+</ul>
+	Welcome
+      </div>
   </body>
 </html>
